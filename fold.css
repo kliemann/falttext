@@ -1,0 +1,19 @@
+details {
+	display: inline-block;
+	background-color: #2222;
+	vertical-align: top;
+}
+summary {
+	display: inline-block;
+}
+summary:before {
+	content: "more";
+	text-decoration: underline;
+	font-family: monospace;
+	color: blue;
+	vertical-align: super;
+	font-size: 0.7em;
+}
+details[open]>summary:before {
+	content: "less";
+}
